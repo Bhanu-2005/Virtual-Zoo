@@ -1,1 +1,53 @@
 
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIRTUAL ZOO (VRB)</title>
+    <link rel="stylesheet" href="vr.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="#">VIRTUAL ZOO<span>.</span></a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="#">Home</a></li>
+          <li><a href="Ani-Gallery.html">Ani-Gallery</a></li>
+          <li><a href="#">Plan Your Visit</a></li>
+          <li><a href="#">Preventing Extinction</a></li>
+          <li><a href="#">Latest news</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+      <div class="content">
+        <h2>To Understand Your Character:<br>
+            Take a trip to the ZOO.</h2>
+        <p>
+         To Understand Your Characters: </br>
+        <p>           Take a trip to the ZOO.</p>
+        </p>
+        <button>Visit Now</button>
+      </div>
+      
+      
+    </section>
+
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+     
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+    
+  </body>
+</html>
